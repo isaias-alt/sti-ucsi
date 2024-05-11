@@ -62,7 +62,7 @@ export const Icons = {
     </svg>
   ),
 
-  logo: (props) => (
+  logo: () => (
     <img
       src="../../public/STI-COLOR-SIN-FONDO.png"
       alt="logo del seminario tecnologico informatico"
