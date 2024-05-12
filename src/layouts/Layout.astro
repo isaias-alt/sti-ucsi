@@ -1,5 +1,14 @@
 ---
+import '@fontsource/montserrat/400.css'
+import '@fontsource/montserrat/400-italic.css'
+import '@fontsource/montserrat/600.css'
+import '@fontsource/montserrat/600-italic.css'
+import '@fontsource/montserrat/800.css'
+import '@fontsource/montserrat/800-italic.css'
+import '@fontsource/montserrat/900-italic.css'
+
 import Navigation from '../components/Navigation.astro';
+import Background from '../components/Background.astro'
 
 const { title } = Astro.props;
 const ogImage = 'public/sti.png'
@@ -26,6 +35,7 @@ const ogImage = 'public/sti.png'
 		<title>{title}</title>
 	</head>
 	<body>
+		<Background />
 		<div class='flex flex-col xl:flex-row justify-between m-auto xl:gap-x-24 xl:w-[1200px] mt-10 xl:mt-0'>
 			<div class='w-full xl:w-52'>
 				<Navigation />
@@ -41,6 +51,7 @@ const ogImage = 'public/sti.png'
 		color-scheme: light dark;
 	}
 	html {
+		font-family: "Montserrat", system-ui, sans-serif;
 		scroll-behavior: smooth;
 	}
 </style>

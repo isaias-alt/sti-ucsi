@@ -38,7 +38,7 @@ export const Icons = {
   ),
   linkedin: () => (
     <svg
-      fill="#FFFFFF"
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       width="35"
@@ -51,7 +51,7 @@ export const Icons = {
 
   facebook: () => (
     <svg
-      fill="#FFFFFF"
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       width="35"
