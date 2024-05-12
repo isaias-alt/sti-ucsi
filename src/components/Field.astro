@@ -1,12 +1,9 @@
 ---
-export interface Props {
-    subtle?: boolean;
-}
-const { subtle } = Astro.props as Props;
+const { subtle } = Astro.props
 ---
 
 <div class:list={[
-  // 'pointer-events-none bg-black',
+  'pointer-events-none bg-black',
   'fixed inset-0 -z-50',
   subtle && 'bg-[length:100%_175%]'
 ]}>
@@ -14,9 +11,9 @@ const { subtle } = Astro.props as Props;
 </div>
 
 <style>
-.starfield {
+  .starfield {
     background-image: url(/background-50.webp);
     background-repeat: no-repeat;
-		background-size: cover;
-}
+    background-size: cover;
+  }
 </style>
