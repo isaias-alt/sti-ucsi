@@ -107,13 +107,6 @@ const sections = document.querySelectorAll('main > section')
 let direction = 'up'
 let prevYPosition = 0
 
-const setScrollDirection = () => {
-	direction =
-			document.documentElement.scrollTop > prevYPosition ? 'down' : 'up'
-
-	prevYPosition = document.documentElement.scrollTop
-}
-
 const options = {
 	root: null,
 	threshold: 0,
