@@ -63,10 +63,19 @@ export const Icons = {
   ),
 
   logo: (props) => (
-    <img
-      src="../../public/logo.webp"
-      alt="logo del seminario tecnologico informatico"
-    />
+    <svg
+      fill="#FFFFFF"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 50 50"
+      width="35"
+      height="35"
+    >
+      {" "}
+      <img
+        src="../../public/logo.webp"
+        alt="logo del seminario tecnologico informatico"
+      />
+    </svg>
   ),
 
   app: () => (
