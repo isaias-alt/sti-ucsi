@@ -52,8 +52,8 @@ const speakers = [
 		linkedin: 'benito-ortega-torres-ab3555242'
 	},
 	{
-		id: 'benortega',
-		name: 'Simon Benitez (ponele)',
+		id: 'simonbenitez',
+		name: 'Simon Benitez',
 		title: 'Inteligencia Artificial: ¿Héroe o Villano?',
 		description: 'Analiza de manera crítica el impacto de la inteligencia artificial en nuestra sociedad, discutiendo tanto sus beneficios como los desafíos éticos y sociales que plantea.',
 		instagram: 'simonandresbenitez',
@@ -73,14 +73,14 @@ const speakers = [
 		class='py-24 flex items-center justify-center flex-col text-center gap-y-8'
 	>
 		<ul
-			class='-rotate-[10deg] flex flex-row flex-wrap gap-x-2 text-center items-center justify-center pb-24 mx-0 px-4 lg:-mx-36'
+			class='-rotate-[10deg] text-[#4287f5] flex flex-row flex-wrap gap-x-2 text-center items-center justify-center pb-24 mx-0 px-4 lg:-mx-36'
 		>
 			{
 				speakers.map((speaker, index) => (
 					<>
 						<li>
 							<a
-								class='font-black text-2xl md:text-4xl italic text-primary hover:text-white hover:scale-125 transition uppercase hover:[text-shadow:0_0_25px_#000]'
+								class='font-black text-2xl md:text-4xl italic text-[#4287f5] hover:text-white hover:scale-125 transition uppercase hover:[text-shadow:0_0_25px_#000]'
 								href={`/#${speaker.id}`}
 							>
 								{speaker.name}

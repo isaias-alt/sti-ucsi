@@ -64,7 +64,7 @@ export const Icons = {
 
   logo: (props) => (
     <img
-      src="../../public/STI-COLOR-SIN-FONDO.png"
+      src="../../public/logo.webp"
       alt="logo del seminario tecnologico informatico"
     />
   ),
