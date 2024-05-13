@@ -11,14 +11,15 @@ import Navigation from '../components/Navigation.astro';
 import Background from '../components/Background.astro'
 
 const { title } = Astro.props;
-const ogImage = 'public/sti.png'
+
+const ogImage = 'https://sti-ucsi.vercel.app/sti.png'
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Descubre el mundo de la tecnología informática en nuestro Seminario Tecnológico Informático. Únete a expertos y entusiastas para explorar el futuro de la tecnología y la informática en un evento diseñado para inspirar, educar y conectar a la comunidad tecnológica." />
 		<meta name="viewport" content="width=device-width" />
 		<meta name='keywords' content='programacion, desarrollo, conferencia, seminario, tecnologia, informatica, ingenieria' />
 		<meta name='author' content='Lucas Isaias Casco' />
@@ -27,11 +28,11 @@ const ogImage = 'public/sti.png'
 		<meta name='og:type' content='website' />
 		<meta name='og:locale' content='es_ES' />
 		<meta name='twitter:image' content={ogImage} />
-		<meta name='og:image' content={ogImage} />
+		<meta name='og:image' content={ogImage}/>
 		<meta name='robots' content='index, follow' />
 		<meta name='googlebot' content='index, follow' />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<title>{title}</title>
 	</head>
 	<body>
