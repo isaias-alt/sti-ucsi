@@ -21,7 +21,15 @@ const { speaker } = Astro.props as { speaker: Speaker }
 		src={`/${speaker.id}.webp`}
 	/>
 	<h3
-		class={`relative bottom-48 [text-shadow:0_0_20px_black] uppercase text-[#4287f5] ${speaker.smallTitle ? 'leading-[.8em] text-4xl md:leading-[.8em] md:text-6xl mt-20' : 'leading-[.8em] text-6xl md:leading-[.8em] md:text-9xl'} -rotate-[10deg] italic font-black text-center`}
+		class={`
+			relative bottom-48 [text-shadow:0_0_20px_black] uppercase text-[#4287f5] 
+			-rotate-[10deg] italic font-black text-center
+			${
+				speaker.smallTitle 
+				? 'leading-[.8em] text-4xl md:leading-[.8em] md:text-6xl mt-20' 
+				: 'leading-[.8em] text-6xl md:leading-[.8em] md:text-9xl'
+			} 
+		`}
 	>
 		{speaker.name}
 	</h3>

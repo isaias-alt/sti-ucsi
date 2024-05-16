@@ -3,7 +3,8 @@ const { className, title, speaker, time, id } = Astro.props
 ---
 
 <article
-	class={`relative hover:scale-105 hover:contrast-150 transition cursor-crosshair w-full border-[#222222] border-[1px] flex gap-x-4 px-4 rounded-lg mb-4 ${
+	class={`relative hover:scale-105 hover:contrast-150 transition cursor-crosshair w-full border-[#222222] border-[1px] flex gap-x-4 px-4 rounded-lg mb-4 
+	${
 		speaker ? 'bg-gray py-4' : 'bg-[#00AAFF] py-1'
 	}`}
 >
@@ -12,13 +13,16 @@ const { className, title, speaker, time, id } = Astro.props
 		<strong
 			class={` text-[16px] pr-8 max-w-[280px] mobile:max-w-full leading-tight text-left break-words overflow-hidden ${
 				speaker ? 'text-primary tablet:text-[20px]' : 'text-black'
-			}`}>{title}</strong
-		>
+			}`}
+	>
+		{title}
+	</strong>
 		{speaker && <span class='max-w-[280px] mobile:max-w-full'>{speaker}</span>}
 	</div>
 	{id && <img
-		class={`${className} absolute w-28 h-[140px] object-cover object-center right-0 bottom-0 drop-shadow-[5px_5px_100px_rgba(255,255,255,.2)]`}
-		alt={`Fotografía de ${speaker}`}
-		src={`/${id}.webp`}
-	/>}
+			class={`${className} absolute w-28 h-[140px] object-cover object-center right-0 bottom-0 drop-shadow-[5px_5px_100px_rgba(255,255,255,.2)]`}
+			alt={`Fotografía de ${speaker}`}
+			src={`/${id}.webp`}
+		/>
+	}
 </article>
