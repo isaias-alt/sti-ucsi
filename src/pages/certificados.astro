@@ -1,11 +1,26 @@
 ---
-import MetaTags from "../components/MetaTags.astro"
+const ogImage = 'https://sti-ucsi.vercel.app/sti.png'
+
 ---
 
 <!DOCTYPE html>
 <html>
   <head>
-    <MetaTags />
+    <meta charset="UTF-8" />
+		<meta name="description" content="Mira las fotos de las certificaciones del Seminario Tecnológico Informático." />
+		<meta name="viewport" content="width=device-width" />
+		<meta name='keywords' content='programacion, desarrollo, conferencia, seminario, tecnologia, informatica, ingenieria' />
+		<meta name='author' content='Lucas Isaias Casco' />
+		<meta name='og:url' content='https://sti-ucsi.com/certificados' />
+		<meta name='og:site_name' content='Certificaciones del Seminario Tecnologico Informatico' />
+		<meta name='og:type' content='website' />
+		<meta name='og:locale' content='es_ES' />
+		<meta name='twitter:image' content={ogImage} />
+		<meta name='og:image' content={ogImage}/>
+		<meta name='robots' content='index, follow' />
+		<meta name='googlebot' content='index, follow' />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
     <title>Certificaciones del Seminario Tecnologico Informatico</title>
   </head>
